@@ -12,9 +12,10 @@
   ##### OU
 - Clonar o repositório com o comando  ```git clone https://github.com/DaniloMRosado/api-javer-cadastro.git``` sendo executado no terminal
 ### 2. Rode a aplicação
-- Caso queira executar a aplicação a partir de uma IDE, modifique ```spring.datasource.username = ${DATASOURCE_USERNAME:root}
-spring.datasource.password = ${DATASOURCE_PASSWORD:FgFcm7AfaGgK}```
-  ##### OU
-- Abra o terminal na pasta que está o projeto e execute o comando maven ```mvn spring-boot:run```
 > [!IMPORTANT]
-> 
+> - No arquivo _src/main/resources/application.properties_ você precisa colocar o usuário e senha do seu banco MySQL
+> - ```spring.datasource.username = ${DATASOURCE_USERNAME}```
+> - ```spring.datasource.password = ${DATASOURCE_PASSWORD}``` 
+
+- Abra o terminal na pasta que está o projeto e execute o comando maven ```mvn spring-boot:run```
+
