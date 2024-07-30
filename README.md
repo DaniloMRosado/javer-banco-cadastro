@@ -1,5 +1,6 @@
 # Gerenciador de dados do Banco Javer
 #### Esta aplicação persiste os dados que foram obtidos através do microsserviço [API REST](https://github.com/DaniloMRosado/api-javer-cadastro).
+
 ## Como executar a aplicação:
 ### Requisitos:
 - JDK 17 instalado. (Recomendado configurar a variável de ambiente JAVA_HOME)
