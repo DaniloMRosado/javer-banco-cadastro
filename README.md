@@ -22,4 +22,6 @@
   ##### OU
 - Abra o terminal na pasta que está o projeto e execute o comando maven ```mvn spring-boot:run``` (lembre de mudar as variáveis de usuário e senha no application.properties) ou pode configurar as variáveis ao executar o projeto <br>
  ```mvn spring-boot:run -DDATASOURCE_USERNAME=seuUsuario -DDATASOURCE_PASSWORD=suaSenha```
+### Para mais informações sobre como enviar dados a API, acesse a documentação 
+http://localhost:8090/swagger-ui/index.html
 
