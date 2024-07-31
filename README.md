@@ -1,5 +1,7 @@
 # Gerenciador de dados do Banco Javer
 #### Esta aplicação persiste os dados que foram obtidos através do microsserviço [API REST](https://github.com/DaniloMRosado/api-javer-cadastro).
+> [!NOTE]  
+> Você não acessa diretamente esta aplicação, mas sim através da [API REST](https://github.com/DaniloMRosado/api-javer-cadastro).
 
 ## Como executar a aplicação:
 ### Requisitos:
