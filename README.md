@@ -20,5 +20,5 @@
 > - ```spring.datasource.password = ${DATASOURCE_PASSWORD}``` 
 - Com o projeto na IDE, execute a classe _DataManagerApplication.java_
   ##### OU
-- Abra o terminal na pasta que está o projeto e execute o comando maven ```mvn spring-boot:run``` (lembre de configurar as variáveis de ambiente do banco de dados)
+- Abra o terminal na pasta que está o projeto e execute o comando maven ```mvn spring-boot:run``` (lembre de mudar as variáveis de usuário e senha no application.properties)
 
