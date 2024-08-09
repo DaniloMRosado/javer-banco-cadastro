@@ -12,7 +12,7 @@
 ### 1. Baixe o projeto
 - Fazer o download do arquivo ZIP deste repositório
   ##### OU
-- Clonar o repositório com o comando  ```https://github.com/DaniloMRosado/javer-banco-cadastro.git``` sendo executado no terminal
+- Clonar o repositório com o comando  ```git clone https://github.com/DaniloMRosado/javer-banco-cadastro.git``` sendo executado no terminal
 ### 2. Rode a aplicação
 > [!IMPORTANT]
 >  No arquivo _src/main/resources/application.properties_ você precisa colocar o usuário e senha do seu banco MySQL <br>
