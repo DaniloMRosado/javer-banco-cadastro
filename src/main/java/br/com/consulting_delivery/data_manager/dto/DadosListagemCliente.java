@@ -6,10 +6,10 @@ public record DadosListagemCliente(
         Long id, String nome,
         Long telefone,
         Boolean correntista,
-        Float saldo_cc) {
+        Float saldoCc) {
 
 
     public DadosListagemCliente(Cliente cliente) {
-        this(cliente.getId(), cliente.getNome(), cliente.getTelefone(), cliente.getCorrentista(), cliente.getSaldo_cc());
+        this(cliente.getId(), cliente.getNome(), cliente.getTelefone(), cliente.getCorrentista(), cliente.getSaldoCc());
     }
 }

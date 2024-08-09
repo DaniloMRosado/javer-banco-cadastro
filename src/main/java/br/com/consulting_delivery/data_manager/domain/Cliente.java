@@ -2,11 +2,7 @@ package br.com.consulting_delivery.data_manager.domain;
 
 import br.com.consulting_delivery.data_manager.dto.DadosAtualizacaoCliente;
 import br.com.consulting_delivery.data_manager.dto.DadosCadastroCliente;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -25,7 +21,8 @@ public class Cliente {
     private String nome;
     private Long telefone;
     private Boolean correntista;
-    private Float saldo_cc;
+    @Column(name = "saldo_cc")
+    private Float saldoCc;
     private Boolean ativo;
 
     public Cliente(DadosCadastroCliente dados) {
@@ -33,7 +30,7 @@ public class Cliente {
         this.nome = dados.nome();
         this.telefone = dados.telefone();
         this.correntista = dados.correntista();
-        this.saldo_cc = dados.saldo_cc();
+        this.saldoCc = dados.saldoCc();
     }
 
     public void atualizarInformacoes(DadosAtualizacaoCliente dados) {
@@ -49,8 +46,8 @@ public class Cliente {
             this.correntista = dados.correntista();
         }
 
-        if (dados.saldo_cc() != null) {
-            this.saldo_cc = dados.saldo_cc();
+        if (dados.saldoCc() != null) {
+            this.saldoCc = dados.saldoCc();
         }
 
     }
