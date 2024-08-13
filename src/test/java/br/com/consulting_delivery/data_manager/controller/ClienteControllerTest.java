@@ -44,8 +44,8 @@ public class ClienteControllerTest {
 
     @Test
     public void ClienteController_CadastrarCliente_RetornaListagemCliente() throws Exception {
-        DadosCadastroCliente dadosCadastro = new DadosCadastroCliente("João", 123456789L, true, 1000.0F);
-        DadosListagemCliente dadosListagemCliente = new DadosListagemCliente(1L, "João", 123456789L, true, 1000.0F);
+        DadosCadastroCliente dadosCadastro = new DadosCadastroCliente("João", 123456789L, true, 1000.0F, "123456789");
+        DadosListagemCliente dadosListagemCliente = new DadosListagemCliente(1L, "João", 123456789L, true, 1000.0F, "123456789");
 
         Mockito.when(this.clienteService.salvarCliente(ArgumentMatchers.any())).thenReturn(dadosListagemCliente);
 
@@ -61,8 +61,8 @@ public class ClienteControllerTest {
     public void ClienteController_ListarClientes_RetornaPageDeListagemCliente() throws Exception {
         List<DadosListagemCliente> clientes = new ArrayList<>();
 
-        clientes.add(new DadosListagemCliente(1L, "João", 123456789L, true, 1000.0F));
-        clientes.add(new DadosListagemCliente(2L, "Maria", 98989898923L, true, 8000.0F));
+        clientes.add(new DadosListagemCliente(1L, "João", 123456789L, true, 1000.0F, "123456789"));
+        clientes.add(new DadosListagemCliente(2L, "Maria", 98989898923L, true, 8000.0F, "123456789"));
 
         Page<DadosListagemCliente> page = new PageImpl<>(clientes);
         Mockito.when(this.clienteService.listar(ArgumentMatchers.any())).thenReturn(page);
@@ -79,7 +79,7 @@ public class ClienteControllerTest {
     public void ClienteController_AtualizarCliente_RetornaListagemCliente() throws Exception {
 
         DadosAtualizacaoCliente dadosAtualizacao = new DadosAtualizacaoCliente(1L, (String)null, (Long)null, (Boolean)null, 5500.0F);
-        DadosListagemCliente dadosListagemCliente = new DadosListagemCliente(1L, "João", 123456789L, true, 1000.0F);
+        DadosListagemCliente dadosListagemCliente = new DadosListagemCliente(1L, "João", 123456789L, true, 1000.0F, "123456789");
 
         Mockito.when(this.clienteService.atualizar(ArgumentMatchers.any())).thenReturn(dadosListagemCliente);
 
@@ -106,7 +106,7 @@ public class ClienteControllerTest {
     public void ClienteController_getByIdCliente_RetornaListagemCliente() throws Exception {
         Long id = 1L;
 
-        DadosListagemCliente dadosListagemCliente = new DadosListagemCliente(1L, "João", 123456789L, true, 1000.0F);
+        DadosListagemCliente dadosListagemCliente = new DadosListagemCliente(1L, "João", 123456789L, true, 1000.0F, "123456789");
 
         Mockito.when(this.clienteService.getById(ArgumentMatchers.any())).thenReturn(dadosListagemCliente);
 

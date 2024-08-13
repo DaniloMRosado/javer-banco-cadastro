@@ -18,12 +18,18 @@ public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "nome")
     private String nome;
+    @Column(name = "telefone")
     private Long telefone;
+    @Column(name = "correntista")
     private Boolean correntista;
     @Column(name = "saldo_cc")
     private Float saldoCc;
+    @Column(name = "ativo")
     private Boolean ativo;
+    @Column(name = "cpf")
+    private String cpf;
 
     public Cliente(DadosCadastroCliente dados) {
         this.ativo = true;
@@ -31,6 +37,7 @@ public class Cliente {
         this.telefone = dados.telefone();
         this.correntista = dados.correntista();
         this.saldoCc = dados.saldoCc();
+        this.cpf = dados.cpf();
     }
 
     public void atualizarInformacoes(DadosAtualizacaoCliente dados) {

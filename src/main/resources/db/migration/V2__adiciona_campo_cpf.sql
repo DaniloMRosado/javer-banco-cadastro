@@ -1,0 +1,2 @@
+ALTER TABLE cliente
+ADD COLUMN cpf VARCHAR(11);
