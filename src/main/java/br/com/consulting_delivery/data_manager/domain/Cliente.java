@@ -15,6 +15,7 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(of = "id")
 @Getter
 public class Cliente {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
