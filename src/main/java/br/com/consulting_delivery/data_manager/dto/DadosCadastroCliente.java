@@ -14,8 +14,9 @@ public record DadosCadastroCliente(
         Boolean correntista,
 
         @NotNull(message = "Insira um saldo inicial")
-        Float saldoCc) {
+        Float saldoCc,
 
-
+        @NotNull(message = "CPF é obrigatório")
+        String cpf) {
 
 }
