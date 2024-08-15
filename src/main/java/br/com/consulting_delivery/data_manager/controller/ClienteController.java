@@ -27,7 +27,7 @@ public class ClienteController {
 
     @PostMapping
     public DadosListagemCliente cadastrar(@RequestBody DadosCadastroCliente dadosCadastroCliente) {
-        return this.clienteService.salvarCliente(dadosCadastroCliente);
+        return this.clienteService.salvarCliente( dadosCadastroCliente);
     }
 
     @GetMapping
